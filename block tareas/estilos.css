@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background-color: #f5f0e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #4a3d29;
+}
+
+.carta {
+    background: linear-gradient(135deg, #f4e1c1, #d2b897);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), inset 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 700px;
+    width: 700px;
+    max-width: 800px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contenedor {
+    margin-bottom: 20px;
+}
+
+.contenedor h1 {
+    font-size: 2.5em;
+    color: #4a3d29;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contenedor1 input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #9e7c4b;
+    border-radius: 8px;
+    background-color: #f9e8b1;
+    color: #4a3d29;
+    font-size: 1.1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contenedor2 label {
+    font-size: 1em;
+    color: #4a3d29;
+}
+
+.boton {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.boton button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #a56e3d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton button:hover {
+    background-color: #8c5731;
+}
+
+.contenedor3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid #d2b48c;
+    border-radius: 12px;
+    background-color: #f8f0d1;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.alto, .Bajo {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: #4a3d29;
+    font-family: 'Lora', serif;
+}
+
+.alto {
+    background-color: #f4d5b3;
+    border-right: 2px solid #d2b48c;
+}
+
+.Bajo {
+    background-color: #e1e9f1;
+}
+
+.alto h2, .Bajo h2 {
+    color: #4a3d29;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.tarea {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f4e1a1;
+    border: 1px solid #d2b48c;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lora', serif;
+}
+
+.tarea span {
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #4a3d29;
+    word-break: break-word;
+}
+
+.tarea .tachado {
+    position: relative;
+    color: grey;
+    text-decoration: none;
+}
+
+.tarea .tachado::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: grey;
+    top: 50%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarea .tachado.tachado::after {
+    transform: scaleX(1);
+}
+
+.checkboxlisto {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 15px;
+}
+
+.tarea button {
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #9f3b3b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    margin-left: 15px;
+}
+
+.tarea button:hover {
+    background-color: #7c2e2e;
+}
